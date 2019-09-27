@@ -48,7 +48,7 @@ Output as follows
     }
 }`
 
-Copy ARN (Amazon Resource Name) from results - for create-function list below
+Copy ARN (Amazon Resource Name) from results - for create-function listed below
 
 #### Specify role permissions
 `aws iam attach-role-policy --role-name lambda-testx-executor \
