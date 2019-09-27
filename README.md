@@ -117,5 +117,10 @@ Output is as follows
 `aws logs filter-log-events --log-group-name /aws/lambda/testx \
 --filter-pattern "ERROR"`
 
+#### TODO
+- Create Serverless Gateway/REST API
+- Create unit tests
+- Create Terraform code to deploy Lambda function
+- Create CircleCI build pipeline
 
 
