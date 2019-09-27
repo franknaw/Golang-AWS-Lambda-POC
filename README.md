@@ -82,7 +82,7 @@ Copy ARN (Amazon Resource Name) from results - for create-function listed below
 `env GOOS=linux GOARCH=amd64 go build -o /tmp/main lambda`
 `zip -j /tmp/main.zip /tmp/main`
 
-#### AWS Lambda Create Function
+#### Lambda Create Function
 `aws lambda create-function --function-name testx --runtime go1.x \
 --role arn:aws:iam::SOME-ID:role/lambda-testx-executor \
 --handler main --zip-file fileb:///tmp/main.zip`
