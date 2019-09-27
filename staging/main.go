@@ -32,14 +32,12 @@ var treasureIslands = map[string]string{
 	"treasure10": "Isla Robinson Crusoe, Anno 1715 in Chile",
 }
 
-func s3Operation(item string) (string, error) {
+func s3Operation(item string) {
 
 	s, err := session.NewSession(&aws.Config{Region: aws.String(S3_REGION)})
 	if err != nil {
 		exitErrorf("Unable to establish session, %s", err)
 	}
-
-	buf := bytes.Buffer{}
 
 	switch item {
 	case "listBuckets":
@@ -63,8 +61,6 @@ func s3Operation(item string) (string, error) {
 	case "deleteTestFile":
 		deleteTestFile(s, "treasure-map.xlsx")
 	}
-
-	return buf.String(), err
 }
 
 func loadTest(s *session.Session) {
@@ -249,20 +245,11 @@ func exitErrorf(s string, args ...interface{}) {
 }
 
 func main() {
-
 	if len(os.Args) != 2 {
 		fmt.Println("ff")
 		exitErrorf("Please enter S3 Operation, %s", os.Args[0])
 	}
-
 	fmt.Println(os.Args[1])
 
-	results, err := s3Operation(os.Args[1])
-
-	if err != nil {
-		exitErrorf("Error for item %q, %v", results, err)
-	}
-
-	fmt.Println(results)
-
+	s3Operation(os.Args[1])
 }
