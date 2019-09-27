@@ -41,7 +41,7 @@ Output as follows
                 }
             ]
         },
-        "RoleId": "AROAXC2RQQBTZQMM4QIPL",
+        "RoleId": "SOME-ID",
         "Path": "/",
         "Arn": "arn:aws:iam::SOME-ID:role/lambda-testx-executor",
         "CreateDate": "2019-09-27T08:14:03Z"
