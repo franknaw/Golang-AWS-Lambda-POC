@@ -119,7 +119,7 @@ Output is as follows
 
 #### TODO
 - Create Serverless Gateway/REST API
-- Create unit tests
+- Create unit tests and document code
 - Create Terraform code to deploy Lambda function
 - Create CircleCI build pipeline
 - Cron Lambda function
