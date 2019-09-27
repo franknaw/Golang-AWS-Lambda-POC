@@ -122,5 +122,6 @@ Output is as follows
 - Create unit tests
 - Create Terraform code to deploy Lambda function
 - Create CircleCI build pipeline
+- Cron Lambda function
 
 
