@@ -81,11 +81,11 @@ func deleteTest(s *session.Session) {
 }
 
 func deleteTestFile(s *session.Session, key string) {
-		req, _ := s3.New(s).DeleteObjectRequest(&s3.DeleteObjectInput{
-			Bucket: aws.String(S3_BUCKET),
-			Key:    aws.String(key)})
-		_ = req.Send()
-		fmt.Printf("Deleting %s\n", key)
+	req, _ := s3.New(s).DeleteObjectRequest(&s3.DeleteObjectInput{
+		Bucket: aws.String(S3_BUCKET),
+		Key:    aws.String(key)})
+	_ = req.Send()
+	fmt.Printf("Deleting %s\n", key)
 }
 
 
