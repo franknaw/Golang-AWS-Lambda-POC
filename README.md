@@ -106,8 +106,8 @@ Output is as follows
 }
 ```
 #### Re-deploy Lambda Service
-`aws lambda update-function-code --function-name testx \
---zip-file fileb:///tmp/main.zip`
+`aws lambda update-function-code --function-name testx 
+--zip-file fileb:///tmp/main.zip` 
 
 #### Delete Lambda Service - when needed
 `aws lambda delete-function --function-name testx`
