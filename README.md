@@ -4,7 +4,7 @@ Proof of Concept for Golang and AWS Lambda Service
 #### Prerequisites
 1. Install Golang
 2. Instal AWS CLI
-3. AWS Go SDK - go get github.com/aws/aws-lambda-go
+3. AWS Go SDK - go get github.com/aws/aws-sdk-go
 4. AWS Lambda SDK - go get github.com/aws/aws-lambda-go/lambda
 4. Excel SDK - go get github.com/360EntSecGroup-Skylar/excelize
 
