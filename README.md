@@ -1,5 +1,4 @@
-# testx
-Proof of Concept for Golang and AWS Lambda Service
+## Proof of Concept for Golang and AWS Lambda Service
 
 #### Prerequisites
 1. Install Golang
